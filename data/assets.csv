@@ -1,0 +1,8 @@
+symbol,expected_return,volatility,sector
+NVDA,0.210,0.360,AI chips
+IBM,0.095,0.210,Enterprise tech
+MSFT,0.135,0.240,Cloud software
+TSLA,0.180,0.440,EV and energy
+JNJ,0.070,0.150,Healthcare
+NEE,0.082,0.190,Clean energy
+

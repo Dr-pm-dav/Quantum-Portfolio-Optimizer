@@ -1,0 +1,103 @@
+{
+  "asset_symbols": [
+    "NVDA",
+    "IBM",
+    "MSFT",
+    "TSLA",
+    "JNJ",
+    "NEE"
+  ],
+  "budget": 3,
+  "qaoa_depth": 1,
+  "qaoa_trials": 80,
+  "best_gammas": [
+    1.7351848360385294
+  ],
+  "best_betas": [
+    0.28361120135719164
+  ],
+  "best_measured_bitstring": "001011",
+  "best_measured_assets": [
+    "MSFT",
+    "JNJ",
+    "NEE"
+  ],
+  "qaoa_expected_energy": 0.8883887665302341,
+  "uniform_random_expected_energy": 3.0812597999999998,
+  "exact_best": [
+    {
+      "bitstring": "001011",
+      "assets": [
+        "MSFT",
+        "JNJ",
+        "NEE"
+      ],
+      "selected": 3,
+      "expected_return": 0.28700000000000003,
+      "risk": 0.3947606869990982,
+      "score": 0.06882960000000007,
+      "energy": -0.06882960000000007
+    },
+    {
+      "bitstring": "011010",
+      "assets": [
+        "IBM",
+        "MSFT",
+        "JNJ"
+      ],
+      "selected": 3,
+      "expected_return": 0.30000000000000004,
+      "risk": 0.40822052863617725,
+      "score": 0.06669840000000005,
+      "energy": -0.06669840000000005
+    },
+    {
+      "bitstring": "010011",
+      "assets": [
+        "IBM",
+        "JNJ",
+        "NEE"
+      ],
+      "selected": 3,
+      "expected_return": 0.247,
+      "risk": 0.3723761539089204,
+      "score": 0.05287040000000004,
+      "energy": -0.05287040000000004
+    },
+    {
+      "bitstring": "011001",
+      "assets": [
+        "IBM",
+        "MSFT",
+        "NEE"
+      ],
+      "selected": 3,
+      "expected_return": 0.312,
+      "risk": 0.43211572524035735,
+      "score": 0.05058640000000003,
+      "energy": -0.05058640000000003
+    },
+    {
+      "bitstring": "101010",
+      "assets": [
+        "NVDA",
+        "MSFT",
+        "JNJ"
+      ],
+      "selected": 3,
+      "expected_return": 0.415,
+      "risk": 0.5226892001945325,
+      "score": 0.0325144,
+      "energy": -0.0325144
+    }
+  ],
+  "circuit": {
+    "num_qubits": 6,
+    "depth": 3,
+    "operations": {
+      "h": 6,
+      "rx": 6,
+      "diagonal": 1
+    }
+  }
+}

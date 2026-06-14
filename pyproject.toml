@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-portfolio-optimizer"
+version = "0.1.0"
+description = "A portfolio-ready quantum optimization project using Qiskit, with optional IBM Quantum, BlueQubit, and PennyLane integrations."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "qiskit>=2.0",
+    "numpy>=2.0",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+cloud = [
+    "qiskit-ibm-runtime>=0.35",
+    "bluequbit>=0.18",
+    "pennylane>=0.39",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+quantum-portfolio = "quantum_portfolio_optimizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
